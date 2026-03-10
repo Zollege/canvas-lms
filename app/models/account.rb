@@ -774,7 +774,7 @@ class Account < ActiveRecord::Base
   end
 
   def equella_settings
-    endpoint = settings[:equella_endpoint] || equella_endpoint
+    endpoint = settings[:equella_endpoint]
     if endpoint.blank?
       nil
     else
